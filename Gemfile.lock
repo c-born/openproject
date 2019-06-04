@@ -609,8 +609,7 @@ GEM
       validate_email
       validate_url
       webfinger (>= 1.0.1)
-    openproject-token (1.0.1)
-      activemodel (~> 5.0)
+    openproject-token (1.0.2)
     parallel (1.13.0)
     parallel_tests (2.27.1)
       parallel
@@ -985,7 +984,7 @@ DEPENDENCIES
   openproject-openid_connect!
   openproject-pdf_export!
   openproject-reporting!
-  openproject-token (~> 1.0.1)
+  openproject-token (~> 1.0.2)
   openproject-translations!
   openproject-two_factor_authentication!
   openproject-webhooks!
