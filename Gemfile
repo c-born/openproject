@@ -106,7 +106,7 @@ gem 'multi_json', '~> 1.13.1'
 gem 'oj', '~> 3.7.0'
 
 gem 'daemons'
-gem 'delayed_job_active_record', '~> 4.1.1'
+gem 'delayed_job_active_record', git: 'https://github.com/collectiveidea/delayed_job_active_record', branch: "rails-6-compatibility"
 
 gem 'rack-protection', '~> 2.0.0'
 
