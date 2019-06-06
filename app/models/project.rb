@@ -156,7 +156,7 @@ class Project < ActiveRecord::Base
   # it implicitly assumes a db:seed-created standard type to be present and currently
   # neither development nor deployment setups are prepared for this
   # validates_presence_of :types
-  validates_uniqueness_of :identifier
+  validates_uniqueness_of :identifier, case_sensitive: false
   validates_associated :repository, :wiki
   validates_length_of :name, maximum: 255
   validates_length_of :identifier, in: 1..IDENTIFIER_MAX_LENGTH

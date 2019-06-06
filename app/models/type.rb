@@ -56,11 +56,10 @@ class ::Type < ActiveRecord::Base
 
   acts_as_list
 
-  validates_presence_of :name
-  validates_uniqueness_of :name
-  validates_length_of :name,
-                      maximum: 255,
-                      unless: lambda { |e| e.name.blank? }
+  validates :name,
+            presence: true,
+            uniqueness: { case_sensitive: true},
+            length: { maximum: 255 }
 
   validates_inclusion_of :is_default, :is_milestone, in: [true, false]
 
